@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Home Page</title>
+  <link rel="stylesheet" href="./style.css">  
+ <script src="script.js" defer></script> 
+</head>
+<body>
+  <!-- Search Bar -->
+  <div class="search-bar">
+    <form action="https://duckduckgo.com/" method="get" target="_blank">
+      <input type="text" name="q" placeholder="Search the web...">
+      <button type="submit">Search</button>
+    </form>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1>Welcome to Ian’s Home Page</h1>
+    <div class="row">
+      <!-- System Info Card -->
+      <div class="card system-info">
+        <h2>System Information</h2>
+        <p id="system-info">Loading system info...</p>
+      </div>
+
+      <!-- Weather Card -->
+      <div class="card weather">
+        <h2>Weather</h2>
+        <p id="weather-info">Loading weather...</p>
+      </div>
+
+      <!-- RSS Feed Cards -->
+      <div class="card rss">
+        <h2>Latest News (Npr News)</h2>
+        <ul id="rss-feed"></ul>
+      </div>
+      <div class="card rss">
+        <h2>Latest Tech News (TechCrunch)</h2>
+        <ul id="rss-feed-tech"></ul>
+      </div>
+      <div class="card rss">
+        <h2>Latest Tech News (Wired)</h2>
+        <ul id="rss-feed-wired"></ul>
+      </div>
+      <div class="card rss">
+        <h2>Latest Tech News (The Verge)</h2>
+        <ul id="rss-feed-verge"></ul>
+      </div>
+
+      <!-- Useful Tools Card -->
+      <div class="card tools">
+        <h2>Useful Tools</h2>
+        <ul>
+          <li><a href="https://www.xe.com" target="_blank">Currency Converter (XE)</a></li>
+          <li><a href="https://www.calculator.net" target="_blank">Online Calculator</a></li>
+          <li><a href="https://www.timeanddate.com/worldclock/converter.html" target="_blank">Time Zone Converter</a></li>
+          <li><a href="https://www.convertunits.com" target="_blank">Convert Units</a></li>
+          <li><a href="https://www.purplemath.com" target="_blank">Algebra Help</a></li>
+          <li><a href="https://www.brainbashers.com" target="_blank">Brain Teasers</a></li>
+        <li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script -->
+</body>
+</html>
