@@ -1,9 +1,9 @@
     /* Global Styles */
   :root{
-    --headingColor:#989048;
-    --textColor:#a79b87;
-    --backgroundColor:#233910;
-    --secondaryBackgroundColor:#404130;
+    --headingColor:#f3f5f4;
+    --textColor:#ebebeb;
+    --backgroundColor:#000;
+    --secondaryBackgroundColor:#717a8b;
   }    
 
 * {
