@@ -1,5 +1,12 @@
     /* Global Styles */
-    * {
+  :root{
+    --headingColor:#FFD700;
+    --textColor:#fff;
+    --backgroundColor:#000;
+    --secondaryBackgroundColor:#1c1c1c;
+  }    
+
+* {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -8,8 +15,8 @@
     }
 
     body {
-      background-color: #000;
-      color: #fff;
+      background-color: var(--backgroundColor);
+      color: var(--textColor);
       font-size: 16px;
       overflow-x: hidden; /* Prevent horizontal scrolling */
     }
@@ -21,7 +28,7 @@
     }
 
     h1, h2 {
-      color: #FFD700; /* Elegant Gold color for headings */
+      color: var(--headingColor); 
       margin-bottom: 10px;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
@@ -30,14 +37,14 @@
     nav {
       display: flex;
       justify-content: center;
-      background-color: #1c1c1c;
+      background-color: var(--secondaryBackgroundColor);
       padding: 15px;
       flex-wrap: wrap;
       gap: 15px;
     }
 
     nav a {
-      color: #EDEDED;
+      color: var(--textColor);
       text-decoration: none;
       font-size: 18px;
       padding: 10px 20px;
@@ -63,22 +70,22 @@
       font-size: 16px;
       width: 80%;
       max-width: 500px;
-      border: 2px solid #FFD700;
+      border: 2px solid var(--headingColor);
       border-radius: 5px;
-      background-color: #333;
-      color: #fff;
+      background-color: var(--secondaryBackgroundColor);
+      color: var(--textColor);
       transition: border 0.3s ease;
     }
 
     .search-bar input[type="text"]:focus {
-      border-color: #ffcc00;
+      border-color: var(--headingColor);
       outline: none;
     }
 
     .search-bar button {
       padding: 12px 20px;
       font-size: 16px;
-      background-color: #FFD700;
+      background-color: var(--headingColor);
       border: none;
       border-radius: 5px;
       cursor: pointer;
@@ -88,7 +95,7 @@
     }
 
     .search-bar button:hover {
-      background-color: #ffcc00;
+      background-color: var(--headingColor);
       transform: scale(1.05);
     }
 
@@ -102,7 +109,7 @@
     }
 
     .card {
-      background-color: #1c1c1c;
+      background-color: var(--secondaryBackgroundColor);
       border-radius: 10px;
       padding: 20px;
       width: 100%;
@@ -116,12 +123,12 @@
     }
 
     .card h2 {
-      color: #FFD700;
+      color: var(--headingColor);
       margin-bottom: 15px;
     }
 
     .card p, .card ul {
-      color: #EDEDED;
+      color: var(--textColor);
       font-size: 14px;
     }
 
@@ -134,7 +141,7 @@
     }
 
     .card ul li a {
-      color: #FFD700;
+      color: var(--textColor);
       text-decoration: none;
     }
 
